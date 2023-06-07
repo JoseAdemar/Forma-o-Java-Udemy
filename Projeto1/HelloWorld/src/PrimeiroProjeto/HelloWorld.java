@@ -1,3 +1,5 @@
+package PrimeiroProjeto;
+
 public class HelloWorld {
     public static void main(String[] args) {
         boolean isAlien = false;
@@ -12,5 +14,13 @@ public class HelloWorld {
         if (isCar = true){
             System.out.println("This is not supposed to happen");
         }
+
+        // Operadores ternários
+
+        String isGreen = "isGreen";
+        System.out.println(isGreen == "isGreen" ? "é verde" : "não é verde");
+
+        boolean isRed = isGreen == "isGreen" ? true : false;
+
     }
 }
