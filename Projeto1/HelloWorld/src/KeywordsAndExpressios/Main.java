@@ -3,36 +3,30 @@ package KeywordsAndExpressios;
 public class Main {
     public static void main(String[] args) {
         boolean gameOver = true;
-        int score = 5000;
+        int score = 800;
         int levelCompleted = 5;
         int bonus = 100;
 
-        validaMetodos(score,gameOver);
+        int highScore = calculateScore(gameOver, score, levelCompleted, bonus);
+        System.out.println("The highScore is " + highScore);
+
+        score = 10000;
+        levelCompleted = 8;
+        bonus = 200;
+
+        System.out.println("The next highScore is " +
+                calculateScore(gameOver, score, levelCompleted, bonus));
     }
 
-    public static boolean validaScore(int score) {
-        if (score >= 6000) {
-            System.out.println("Seu score é = " + score);
-            return true;
-        }
-        return false;
-    }
+    public static int calculateScore(boolean gameOver, int score, int levelCompleted, int bonus) {
 
-    public static boolean validaGameOver(boolean gameOver) {
-        if (!gameOver) {
-            System.out.println("sdfsf");
-            return true;
-        }
-        return false;
-    }
+        int finalScore = score;
 
-    public static boolean validaMetodos(int score, boolean gameOver) {
-        var teste1 = validaScore(score);
-        var teste2 = validaGameOver(gameOver);
-        if ((!teste1) && (!teste2)) {
-            System.out.println("nenhuma das opções");
-            return true;
+        if (gameOver) {
+            finalScore += (levelCompleted * bonus);
+            finalScore += 1000;
         }
-        return false;
+
+        return finalScore;
     }
 }
