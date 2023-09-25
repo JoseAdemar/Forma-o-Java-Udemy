@@ -1,4 +1,4 @@
-package controle;
+package Leonardo.controle.desafios;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package cursos;
+package Leonardo.controle.cursos;
 
 import java.util.Scanner;
 

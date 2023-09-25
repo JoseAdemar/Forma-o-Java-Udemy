@@ -1,11 +1,14 @@
-package controle;
+package Leonardo.controle;
 
-public class For1 {
+public class WhileDeterminado {
     public static void main(String[] args) {
-        int contador = 0;
-        for (contador = 1; contador <= 10; contador ++){
+
+        int contador = 1;
+        while (contador <= 10){
             System.out.printf("i = %d\n", contador);
             System.out.println("Bom dia!!");
+            contador ++;
+
         }
     }
 }

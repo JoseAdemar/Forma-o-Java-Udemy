@@ -1,6 +1,4 @@
-package controle;
-
-import org.w3c.dom.ls.LSOutput;
+package Leonardo.controle.desafios;
 
 import java.util.Locale;
 import java.util.Scanner;
